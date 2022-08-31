@@ -5,7 +5,7 @@
     font-family: 'Kumbh Sans',  sans-serif;
 }
 .navbar {
-    background: black;
+    background: rgb(13,13,13);
     height: 80px;
     display: flex;
     justify-content: center;
@@ -28,7 +28,7 @@
 }
 #navbar_logo {
     background-color: red;
-    background-image: linear-gradient(to top, red);
+    background-image: linear-gradient(to top, wheat 0%, rgb(0, 225, 255) 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -51,6 +51,7 @@
 }
 .navbar_item {
     height: 40px;
+    margin-left: 10px;
 }
 .navbar_links {
     color: white;
@@ -73,12 +74,12 @@
     justify-content: center;
     align-self: center;
     text-decoration: none;
-    padding: 10px 30px;
+    padding: 10px 20px;
     height: 100%;
     width: 100%;
     border: none;
     outline: none;
-    border-radius: 25px;
+    border-radius: 15px;
     background: red;
     color: black;
 }
