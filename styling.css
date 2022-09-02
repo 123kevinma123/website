@@ -2,10 +2,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Kumbh Sans',  sans-serif;
+    font-family: 'Open Sans';
 }
 .navbar {
-    background: rgb(13,13,13);
+    background: rgb(32,32,32);
     height: 80px;
     display: flex;
     justify-content: center;
@@ -27,9 +27,10 @@
     padding: 0 50px;
 }
 #navbar_logo {
-    background-color: red;
-    background-image: linear-gradient(to top, wheat 0%, rgb(0, 225, 255) 100%);
+    color: red;
+    background-image: linear-gradient(to top, wheat 0%, rgb(0, 255, 217) 100%);
     background-size: 100%;
+    font-weight: 500;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -38,10 +39,8 @@
     align-items: center;
     cursor: pointer;
     text-decoration: none;
-    font-size: 2rem;
-}
-.fa-gem {
-    margin-right: 0.5rem;
+    font-size: 2.5rem;
+    transition: background-image 0.9s ease-in;
 }
 .navbar_menu {
     display: flex;
@@ -54,7 +53,7 @@
     margin-left: 10px;
 }
 .navbar_links {
-    color: white;
+    color: wheat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,16 +73,22 @@
     justify-content: center;
     align-self: center;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 7px 20px;
     height: 100%;
     width: 100%;
     border: none;
     outline: none;
     border-radius: 15px;
-    background: red;
-    color: black;
+    background: wheat;
+    color: rgb(32,32,32);
 }
 .button:hover {
-    background-color: white;
-    transition: 0.1s;
+    background-color: rgb(190, 165, 121);
+    color: rgb(32,32,32);
+    transition: all 0.15s ease-in;
 }
+.navbar_links:hover {
+    color: rgb(190, 165, 121);
+    transition: all 0.15s ease-in;
+}
+
