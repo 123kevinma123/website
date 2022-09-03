@@ -53,7 +53,7 @@
     margin-left: 10px;
 }
 .navbar_links {
-    color: wheat;
+    color: whitesmoke;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,16 +79,45 @@
     border: none;
     outline: none;
     border-radius: 15px;
-    background: wheat;
+    background: whitesmoke;
     color: rgb(32,32,32);
 }
 .button:hover {
-    background-color: rgb(190, 165, 121);
+    background-color: rgba(245, 245, 245, 0.748);
     color: rgb(32,32,32);
     transition: all 0.15s ease-in;
 }
 .navbar_links:hover {
-    color: rgb(190, 165, 121);
+    color: rgba(245, 245, 245, 0.748);
     transition: all 0.15s ease-in;
 }
-
+.main_container {
+    display: flex;
+    align-items: center;
+    height: 650px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1800px;
+    padding: 0px 0px 100px 300px;
+    background-color: whitesmoke;
+}
+.main_header {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    width: 300px;
+    padding: 7px;
+    color: rgb(32,32,32);
+    border-radius: 15px;
+    outline: 2px dotted green;
+}
+.main_content {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    width: 400px;
+    padding: 10px;
+    color: rgb(32,32,32);
+    border-radius: 15px;
+    outline: 2px dotted green;
+}
