@@ -2,10 +2,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans';
+    font-family: 'Times';
 }
 .navbar {
-    background: rgb(32,32,32);
+    background:#222220;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -27,20 +27,12 @@
     padding: 0 50px;
 }
 #navbar_logo {
-    color: red;
-    background-image: linear-gradient(to top, wheat 0%, rgb(0, 255, 217) 100%);
-    background-size: 100%;
-    font-weight: 500;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+    color:#e2e6e7;
     display: flex;
     align-items: center;
     cursor: pointer;
     text-decoration: none;
     font-size: 2.5rem;
-    transition: background-image 0.9s ease-in;
 }
 .navbar_menu {
     display: flex;
@@ -53,7 +45,7 @@
     margin-left: 10px;
 }
 .navbar_links {
-    color: whitesmoke;
+    color: #e2e6e7;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,7 +71,7 @@
     border: none;
     outline: none;
     border-radius: 15px;
-    background: whitesmoke;
+    background: #e2e6e7;
     color: rgb(32,32,32);
 }
 .button:hover {
@@ -94,30 +86,46 @@
 .main_container {
     display: flex;
     align-items: center;
-    height: 650px;
+    justify-content: center;
     z-index: 1;
     width: 100%;
-    max-width: 1800px;
-    padding: 0px 0px 100px 300px;
-    background-color: whitesmoke;
+    padding-top: 100px;
+    padding-bottom: 257px;
+    background-color: #243b35;
 }
-.main_header {
+.main_img {
     display: flex;
     justify-content: center;
     height: fit-content;
-    width: 300px;
-    padding: 7px;
-    color: rgb(32,32,32);
-    border-radius: 15px;
-    outline: 2px dotted green;
-}
-.main_content {
-    display: flex;
-    justify-content: center;
-    height: fit-content;
-    width: 400px;
+    width: fit-content;
     padding: 10px;
     color: rgb(32,32,32);
     border-radius: 15px;
-    outline: 2px dotted green;
+    outline: 2px dotted red;
+}
+.main_content {
+    display: grid;
+    justify-content: center;
+    height: fit-content;
+    width: fit-content;
+    padding: 20px;
+    color: #c7cac1;
+    border-radius: 15px;
+    margin-right: 100px;
+    border-left: thick solid #222220;
+    border-right:thick solid #222220;
+}
+.main_content p {
+    margin-left: 120px;
+    font-size: 1.1rem;
+}
+.main_content p1 {
+    font-size: 1.3rem;
+}
+h1 {
+    color: #e2e6e7;
+    font-weight: 600;
+    display: flex;
+    font-size: 6rem;
+    padding-bottom: 10px;
 }
