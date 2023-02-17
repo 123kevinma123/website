@@ -56,23 +56,29 @@
 .button {
     display: flex;
     justify-content: center;
-    align-self: center;
     text-decoration: none;
-    padding: 12px 20px;
+    padding: 20px 20px;
     height: 100%;
     width: 100%;
     border: none;
     outline: none;
     border-radius: 15px;
-    background: black;
-    color: #e2e6e7;
+    color: white;
+    /*border: 2px solid white;*/
+    font-size: 1.2vw;
 }
 .button:hover {
-    color: black;
-    transition: all 0.2s ease-in;
+    content: "";
+}
+.button:hover::before {
+    color: red;
+    content: ">";
+    font-weight: bold;
 }
 .button:hover::after {
-    content: "hello!";
+    color: red;
+    content: "<";
+    font-weight: bold;
 }
 .navbar_links:hover {
     color: rgba(245, 245, 245, 0.748);
@@ -84,17 +90,53 @@
     justify-content: center;
     padding-top: 13%;
     color: white;
+    padding-bottom: 5%;
     /*border: 2px solid white;*/
+    margin-inline: 25%;
 }
 .sub_content {
     color: white;
-    /*border: 2px solid yellow;*/
-    padding: 2%;
+    border: 2px solid white;
+    padding-bottom: 1.5%;
+    margin-inline: 25%;
 }
 h1 {
     font-size: 6vw;
-    padding-right: 3%;
+    padding-inline: 4%;
 }
 h2 {
     font-size: 6vw;
+    padding-right: 3%;
+
+}
+.button1 {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding: 5%;
+    height: 300%;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: white;
+    /*border: 2px solid white;*/
+    font-size: 2vw;
+}
+.button1:hover {
+    content: "";
+}
+.button1:hover::before {
+    color: red;
+    content: ">";
+    font-weight: bold;
+}
+.button1:hover::after {
+    color: red;
+    content: "<";
+    font-weight: bold;
+}
+.sub_content1 {
+    color: white;
+    padding-bottom: 1.5%;
+    margin-inline: 25%;
 }
