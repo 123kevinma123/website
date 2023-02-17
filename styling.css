@@ -2,7 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Times';
+    font-family: 'Press Start 2P', cursive;
+    background-color: black;
 }
 .navbar {
     background:#222220;
@@ -25,14 +26,6 @@
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 50px;
-}
-#navbar_logo {
-    color:#e2e6e7;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2.5rem;
 }
 .navbar_menu {
     display: flex;
@@ -65,67 +58,43 @@
     justify-content: center;
     align-self: center;
     text-decoration: none;
-    padding: 7px 20px;
+    padding: 12px 20px;
     height: 100%;
     width: 100%;
     border: none;
     outline: none;
     border-radius: 15px;
-    background: #e2e6e7;
-    color: rgb(32,32,32);
+    background: black;
+    color: #e2e6e7;
 }
 .button:hover {
-    background-color: rgba(245, 245, 245, 0.748);
-    color: rgb(32,32,32);
-    transition: all 0.15s ease-in;
+    color: black;
+    transition: all 0.2s ease-in;
+}
+.button:hover::after {
+    content: "hello!";
 }
 .navbar_links:hover {
     color: rgba(245, 245, 245, 0.748);
     transition: all 0.15s ease-in;
 }
-.main_container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-    width: 100%;
-    padding-top: 100px;
-    padding-bottom: 257px;
-    background-color: #243b35;
-}
-.main_img {
-    display: flex;
-    justify-content: center;
-    height: fit-content;
-    width: fit-content;
-    padding: 10px;
-    color: rgb(32,32,32);
-    border-radius: 15px;
-    outline: 2px dotted red;
-}
 .main_content {
-    display: grid;
+    display: flex;
+    text-align: center;
     justify-content: center;
-    height: fit-content;
-    width: fit-content;
-    padding: 20px;
-    color: #c7cac1;
-    border-radius: 15px;
-    margin-right: 100px;
-    border-left: thick solid #222220;
-    border-right:thick solid #222220;
+    padding-top: 13%;
+    color: white;
+    /*border: 2px solid white;*/
 }
-.main_content p {
-    margin-left: 120px;
-    font-size: 1.1rem;
-}
-.main_content p1 {
-    font-size: 1.3rem;
+.sub_content {
+    color: white;
+    /*border: 2px solid yellow;*/
+    padding: 2%;
 }
 h1 {
-    color: #e2e6e7;
-    font-weight: 600;
-    display: flex;
-    font-size: 6rem;
-    padding-bottom: 10px;
+    font-size: 6vw;
+    padding-right: 3%;
+}
+h2 {
+    font-size: 6vw;
 }
