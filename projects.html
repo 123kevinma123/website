@@ -21,9 +21,20 @@
     <div class = "sub_content1">
         <p>
             <li class = "navbar_item" style = "list-style: none;">
-            <a href = "loading.html" class = "button1">CLICK TO START</a>
+            <a href = "loading.html" class = "button1">&nbspPress Any Key&nbsp</a>
             </li>
         </p>
+        <script>
+            function page_redirect() {
+            window.location = "loading.html";
+            }
+            window.onclick = page_redirect;
+            window.onkeypress = page_redirect;
+            window.onkeydown = page_redirect;
+        </script>
+    </div>
+    <div class = "footer">
+        © 2023 KEVIN MA
     </div>
 </body>
 </html>
