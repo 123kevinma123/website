@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Press Start 2P', cursive;
-    background-color: black;
 }
 .navbar {
     background:#222220;
@@ -139,4 +138,35 @@ h2 {
     color: white;
     padding-bottom: 1.5%;
     margin-inline: 25%;
+}
+body {
+    background-color: black;
+}
+#bar {
+    width: 0%;
+    height: 30px;
+    background-color: white;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+#bar1 {
+    width: 0%;
+    height: 30px;
+    background-color: white;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+.boxer {
+    display:flex;
+    width: 50%;
+    margin-inline: auto;
+    margin-top: 20%;
+    border: 2px solid white;
+}
+h3 {
+    color:white;
+    margin-left: 44%;
+    padding-top: 2%;
 }
