@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+}
+body {
+    background-color: black;
+}
+h1 {
+    font-size: 6vw;
+    padding-inline: 4%;
+}
+h2 {
+    font-size: 6vw;
+    padding-right: 3%;
+}
+.main_content {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 13%;
+    color: white;
+    padding-bottom: 4%;
+    /*border: 2px solid white;*/
+    margin-inline: 25%;
+}
+.sub_content1 {
+    color: white;
+    padding-bottom: 1.5%;
+    margin-inline: 25%;
+}
+.button1 {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding-top: 3%;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: white;
+    /*border: 2px solid white;*/
+    font-size: 2vw;
+    animation: glowing 2000ms infinite;
+}
+.navbar_item {
+    height: 40px;
+    padding-top: 3px;
+}
+.button1:hover {
+    font-size: 2vw;
+    transition: 100ms ease-in;
+    cursor: default;
+}
+/*.button1:hover::before {
+    color: red;
+    content: '\25BA';
+    font-size: 2.3vw;
+    font-weight: bold;
+    margin-top: -8px;
+}
+.button1:hover::after {
+    color: red;
+    content: '\25C4';
+    font-weight: bold;
+    font-size: 2.3vw;
+    margin-top: -8px;
+}*/
+@keyframes glowing {
+    0% {
+      color: rgb(180,0, 0);
+    }
+    50% {
+      color: red;
+    }
+    100% {
+      color: rgb(180, 0, 0);
+    }
+}

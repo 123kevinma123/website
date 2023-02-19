@@ -4,18 +4,14 @@
     padding: 0;
     font-family: 'Press Start 2P', cursive;
 }
+body {
+    background-color: black;
+}
 .navbar {
     height: 60px;
     display: flex;
-    justify-content: right;
     font-size: 1.5vw;
     position: sticky;
-}
-.navbar_menu {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    text-align: center;
 }
 .navbar_item {
     height: 40px;
@@ -25,7 +21,14 @@
     color: white;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+}
+.navbar_logo {
+    color: white;
+    display: flex;
     text-decoration: none;
     padding: 0 1rem;
     height: 100%;
@@ -57,18 +60,16 @@
     transition: 400ms ease-in;
 }
 .button:hover::before {
-    content: '\25BA';
-    font-weight: bold;
-    font-size: 1.5vw;
-    margin-top: -1%;
-    animation: glowing 2000ms infinite;
+    content: '\21A0';
+    font-size: 2vw;
+    margin-top: -1.5%;
+    animation: glowing 2500ms infinite;
 }
-.button:hover::after {
-    content: '\25C4';
-    font-weight: bold;
-    font-size: 1.5vw;
-    margin-top: -1%;
-    animation: glowing 2000ms infinite;
+.button:hover::after { 
+    content: '\219E';
+    font-size: 2vw;
+    margin-top: -1.5%;
+    animation: glowing 2500ms infinite;
 }
 .navbar_links:hover {
     color:rgba(255, 255, 255, 0.54);
@@ -86,7 +87,7 @@
 }
 .sub_content {
     color: white;
-    border: 2px solid white;
+    /*border: 2px solid white;*/
     padding-bottom: 1.5%;
     padding-top: 1.5%;
     margin-inline: 25%;
@@ -98,58 +99,11 @@ h1 {
 h2 {
     font-size: 6vw;
     padding-right: 3%;
-
-}
-.button1 {
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    padding-top: 3%;
-    width: 100%;
-    border: none;
-    outline: none;
-    color: white;
-    /*border: 2px solid white;*/
-    font-size: 2vw;
-    animation: glowing 2000ms infinite;
-}
-.button1:hover {
-    font-size: 2vw;
-    transition: 100ms ease-in;
-    cursor: default;
-}
-/*.button1:hover::before {
-    color: red;
-    content: '\25BA';
-    font-size: 2.3vw;
-    font-weight: bold;
-    margin-top: -8px;
-}
-.button1:hover::after {
-    color: red;
-    content: '\25C4';
-    font-weight: bold;
-    font-size: 2.3vw;
-    margin-top: -8px;
-}*/
-@keyframes glowing {
-    0% {
-      color: rgb(180,0, 0);
-    }
-    50% {
-      color: red;
-    }
-    100% {
-      color: rgb(180, 0, 0);
-    }
 }
 .sub_content1 {
     color: white;
     padding-bottom: 1.5%;
     margin-inline: 25%;
-}
-body {
-    background-color: black;
 }
 #bar {
     width: 0%;
@@ -174,21 +128,43 @@ body {
     margin-top: 20%;
     border: 2px solid white;
 }
-h3 {
-    color:white;
-    text-align: center;
-    padding-top: 2%;
-    font-size: 4vw;
-    margin-top: -25%;
-    /*border: 2px solid white*/;
-}
 .footer {
     color:white;
     position: relative;
     text-align: center;
     margin-top: 4.5%;
+    margin-bottom: 4.5%;
     font-size: 1vw;
+}
+h4 {
+    color:white;
+    text-align: center;
+    padding-top: 2%;
+    font-size: 2vw;
+}
+h3 {
+    color:white;
+    text-align: center;
+    font-size: 4vw;
+    margin-top: -20%;
+    /*border: 2px solid white*/;
 }
 .about {
     margin-top: -15%;
+    font-size: 16px;
+    text-align: center;
+    margin-left: -20%;
+    margin-right: -20%
+    
+}
+@keyframes glowing {
+    0% {
+      color: rgb(180,0, 0);
+    }
+    50% {
+      color: red;
+    }
+    100% {
+      color: rgb(180, 0, 0);
+    }
 }

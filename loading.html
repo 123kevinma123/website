@@ -4,13 +4,13 @@
     <meta charset = "UTF-8">
     <meta name = "viewport" 
     content = "width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "styling.css" />
+    <link rel = "stylesheet" href = "menu.css" />
     <link rel = "preconnect" href = "https://fonts.googleapis.com">
     <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
     <link href = "https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel = "stylesheet">
     <script>
         function page_redirect() {
-        window.location = "index.html";
+        window.location = "menu.html";
         }
         setTimeout('page_redirect()', 4000);
     </script>
@@ -20,45 +20,12 @@
         <div id="bar" ></div>
         <div id="bar1" ></div>
     </div>
-    <h3>
+    <h4>
         LOADING...
-    </h3>
+    </h4>
     <body onLoad = "move();"></body>
     <body onLoad = "move1();"></body>
     
-    <script>
-    setTimeout (
-        function move() {
-            var elem = document.getElementById("bar");
-            var width = 0;
-            var id = setInterval(frame, 70);
-            function frame() {
-                if (width >= 30) {
-                    clearInterval(id);
-                } else {
-                    width++;
-                    elem.style.width = width + "%";
-                }
-            }
-        }, 500);
-    setTimeout(
-        function move1() {
-        var width1 = 0;
-        var elem1 = document.getElementById("bar1");
-        var id1 = setInterval(frame1, 3);
-        function frame1() {
-            if (width1 >= 70) {
-                clearInterval(id1);
-            } else {
-                width1++;
-                elem1.style.width = width1 + "%";
-            }
-        }
-    }, 2600);
-
-    </script>
-    <div class = "footer">
-        © 2023 KEVIN MA
-    </div>
+    <script src = "loading.js"></script>
 </body>
 </html>
