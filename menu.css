@@ -142,21 +142,37 @@ h4 {
     padding-top: 2%;
     font-size: 2vw;
 }
+.main_content1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 13%;
+    margin-bottom: -4%;
+    color: white;
+    /*border: 2px solid white;*/
+    margin-inline: 25%;
+}
 h3 {
     color:white;
     text-align: center;
     font-size: 4vw;
     margin-top: -20%;
-    /*border: 2px solid white*/;
+    margin-bottom: -20%;
+    }
+.title {
+    text-align: left;
+    margin-left: -20%;
+    line-height: 30px;
+    border-bottom: 2px solid white;
+    width: max-content;
+    animation: glowing 2500ms infinite;
 }
 .about {
-    margin-top: -15%;
     font-size: 1vw;
-    text-align: center;
+    text-align: left;
     margin-left: -20%;
     margin-right: -20%;
     line-height: 30px;
-    
 }
 @keyframes glowing {
     0% {
