@@ -185,3 +185,13 @@ h3 {
       color: rgb(180, 0, 0);
     }
 }
+body::after {
+    position: relative;
+    margin-top: -3%;
+    content: "";
+    display: block;
+    width: 6vmin;
+    height: 6vmin;
+    border-radius: 50%;
+    background: conic-gradient(yellow 55deg, transparent 0 125deg, yellow 0);
+}
