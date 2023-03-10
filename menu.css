@@ -57,7 +57,7 @@ body {
 }
 .button:hover {
     font-size: 1.25vw;
-    transition: 400ms ease-in;
+    transition: 300ms ease-in;
 }
 .button:hover::before {
     content: '\21A0';
@@ -79,7 +79,7 @@ body {
     display: flex;
     text-align: center;
     justify-content: center;
-    padding-top: 13%;
+    padding-top: 7%;
     color: white;
     padding-bottom: 4%;
     /*border: 2px solid white;*/
@@ -133,8 +133,10 @@ h2 {
     position: relative;
     text-align: center;
     margin-top: 4.5%;
-    margin-bottom: 4.5%;
     font-size: 1vw;
+}
+.header {
+    margin-top: 2.5%;
 }
 h4 {
     color:white;
@@ -185,13 +187,87 @@ h3 {
       color: rgb(180, 0, 0);
     }
 }
-body::after {
+.pacman1 {
+    overflow: hidden;
+    padding-top: 2%;
+}
+.pacman1::after {
     position: relative;
-    margin-top: -3%;
     content: "";
     display: block;
     width: 6vmin;
     height: 6vmin;
     border-radius: 50%;
     background: conic-gradient(yellow 55deg, transparent 0 125deg, yellow 0);
+    animation: close_mouth 0.4s linear infinite, movee 7s linear infinite;
+}
+.pacman {
+    overflow: hidden;
+}
+.pacman::after {
+    position: relative;
+    content: "";
+    display: block;
+    margin-top: 2%;
+    width: 6vmin;
+    height: 6vmin;
+    border-radius: 50%;
+    background: conic-gradient(yellow 235deg, transparent 0 305deg, yellow 0);
+    animation: close_mouth1 0.4s linear infinite, movee1 7s linear infinite;
+}
+@keyframes close_mouth {
+    0% { 
+        background: conic-gradient(yellow 55deg, transparent 0 125deg, yellow 0); 
+    }
+    25% { 
+        background: conic-gradient(yellow 55deg, yellow 0);
+    }
+    50% { 
+        background: conic-gradient(yellow 55deg, transparent 0 125deg, yellow 0); 
+    }
+
+}
+@keyframes close_mouth1 {
+    0% { 
+        background: conic-gradient(yellow 235deg, transparent 0 305deg, yellow 0); 
+    }
+    25% { 
+        background: conic-gradient(yellow 235deg, yellow 0);
+    }
+    50% { 
+        background: conic-gradient(yellow 235deg, transparent 0 305deg, yellow 0); 
+    }
+
+}
+@keyframes movee {
+    0% {
+        opacity: 1;
+        transform: translate(-10vmin, 0) 
+    }
+    50% { 
+        opacity: 1;
+        transform: translate(100vw, 0) 
+    }
+    50.5% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes movee1 {
+    0% {
+        opacity: 0;
+    }
+    49% { 
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: translate(100vw, 0) 
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-10vmin, 0) 
+    }
 }
