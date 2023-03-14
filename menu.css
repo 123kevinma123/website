@@ -190,6 +190,9 @@ h3 {
 .pacman1 {
     overflow: hidden;
     padding-top: 2%;
+    background-image: radial-gradient(white 10%, transparent 0);
+    background-size: 8vmin 8vmin;
+    background-position: 0px 120%;
 }
 .pacman1::after {
     position: relative;
@@ -199,10 +202,32 @@ h3 {
     height: 6vmin;
     border-radius: 50%;
     background: conic-gradient(yellow 55deg, transparent 0 125deg, yellow 0);
-    animation: close_mouth 0.4s linear infinite, movee 7s linear infinite;
+    animation: close_mouth 0.5s linear infinite, movee 10s linear infinite;
 }
+.pacman1::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 0vmin;
+    height: 0vmin;
+    background: conic-gradient(yellow 55deg, transparent 0 125deg, yellow 0);
+    animation: close_mouth 0.5s linear infinite, movee 10s linear infinite;
+    
+}
+@keyframes disappear1 {
+    0% {
+        background: red;
+    }
+    100% {
+        background: black;
+    }
+}
+
 .pacman {
     overflow: hidden;
+    background-image: radial-gradient(white 10%, transparent 0);
+    background-size: 8vmin 8vmin;
+    background-position: 0px 120%;
 }
 .pacman::after {
     position: relative;
@@ -213,7 +238,7 @@ h3 {
     height: 6vmin;
     border-radius: 50%;
     background: conic-gradient(yellow 235deg, transparent 0 305deg, yellow 0);
-    animation: close_mouth1 0.4s linear infinite, movee1 7s linear infinite;
+    animation: close_mouth1 0.5s linear infinite, movee1 10s linear infinite;
 }
 @keyframes close_mouth {
     0% { 
@@ -248,7 +273,7 @@ h3 {
         opacity: 1;
         transform: translate(100vw, 0) 
     }
-    50.5% {
+    50.1% {
         opacity: 0;
     }
     100% {
@@ -259,7 +284,7 @@ h3 {
     0% {
         opacity: 0;
     }
-    49% { 
+    49.9% { 
         opacity: 0;
     }
     50% {
