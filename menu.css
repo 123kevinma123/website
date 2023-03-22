@@ -4,8 +4,30 @@
     padding: 0;
     font-family: 'Press Start 2P', cursive;
 }
-body {
-    background-color:black;
+.tom {
+    background: url("stars.png") repeat top center;
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+.malfoy {
+    background: transparent url("splashing.png") repeat top center;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+
+    animation: twinkle 100s linear infinite;
+    position: fixed;
+}
+.maine {
+    background: black;
+}
+@keyframes twinkle {
+    from {background-position: 0,0;}
+    to {background-position: 1000px 0}
 }
 .navbar {
     height: 60px;
@@ -90,6 +112,7 @@ body {
     padding-bottom: 4%;
     /*border: 2px solid white;*/
     margin-inline: 25%;
+    position: relative;
 }
 .sub_content {
     color: white;
@@ -143,6 +166,7 @@ h2 {
     margin-inline: auto;
     margin-top: 20%;
     border: 2px solid white;
+    position: relative;
 }
 .footer {
     color:white;
@@ -159,6 +183,7 @@ h4 {
     text-align: center;
     padding-top: 2%;
     font-size: 2vw;
+    position: relative;
 }
 .main_content1 {
     display: flex;

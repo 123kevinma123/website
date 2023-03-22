@@ -10,10 +10,12 @@ body {
 h1 {
     font-size: 6vw;
     padding-inline: 4%;
+    position: relative;
 }
 h2 {
     font-size: 6vw;
     padding-right: 3%;
+    position: relative;
 }
 .main_content {
     display: flex;
@@ -29,6 +31,7 @@ h2 {
     color: white;
     padding-bottom: 1.5%;
     margin-inline: 25%;
+    position: relative;
 }
 .button1 {
     display: flex;
@@ -41,7 +44,7 @@ h2 {
     color: white;
     /*border: 2px solid white;*/
     font-size: 2vw;
-    animation: glowing 2000ms infinite;
+    animation: glowing 2.3s infinite;
 }
 .navbar_item {
     height: 40px;
@@ -70,10 +73,35 @@ h2 {
     0% {
       color: rgb(180,0, 0);
     }
-    50% {
+    60% {
       color: red;
     }
     100% {
       color: rgb(180, 0, 0);
     }
+}
+.tom {
+    background: url("stars.png") repeat top center;
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+.malfoy {
+    background: transparent url("splashing.png") repeat top center;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+
+    animation: twinkle 100s linear infinite;
+    position: fixed;
+}
+.maine {
+    background: black;
+}
+@keyframes twinkle {
+    from {background-position: 0,0;}
+    to {background-position: 1000px 0}
 }
