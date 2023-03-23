@@ -1,0 +1,101 @@
+.tom {
+    background: url("stars.png") repeat top center;
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    overflow: hidden;
+}
+.malfoy {
+    background: transparent url("splashing.png") repeat top center;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+
+    animation: twinkle 100s linear infinite;
+    position: fixed;
+}
+.maine {
+    background: black;
+}
+@keyframes twinkle {
+    from {background-position: 0,0;}
+    to {background-position: 1000px 0}
+}
+.shooting_star {
+    height: 3%;
+    width: 100%;
+    transform: rotate(-30deg);
+    position: absolute;
+    z-index: 3;
+    color: white;
+    transform-origin: left;
+    margin-top: 30%;
+}
+.shooting_star2 {
+    height: 3%;
+    width: 70%;
+    transform: rotate(60deg);
+    transform-origin: right;
+    position: absolute;
+    z-index: 3;
+    color: white;
+    margin-top: 46%;
+}
+.star {
+    background: white;
+    height: 50%;
+    width: 100%;
+    background-size: 3vmin 3vmin;
+    margin-top: -0.4%;
+    border-radius: 50%;
+    animation: star_fall 7s infinite;
+    position: absolute;
+}
+.star2 {
+    background:white;
+    height: 50%;
+    width: 10%;
+    background-size: 3vmin 3vmin;
+    margin-top: -0.4%;
+    border-radius: 50%;
+    animation: star_fall2 5s infinite;
+    animation-delay: 3s;
+    position: absolute;
+    display: block;
+
+}
+@keyframes star_fall {
+    0% {
+        opacity: 1;
+        transform: translate(-10vmin, 0);
+    }
+    10% { 
+        opacity: 1;
+        transform: translate(100vw, 0);
+    }
+    10.1% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes star_fall2 {
+    0% {
+        opacity: 1;
+        transform: translate(-10vmin, 0);
+    }
+    10% { 
+        opacity: 1;
+        transform: translate(100vw, 0);
+    }
+    10.1% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}

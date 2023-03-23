@@ -4,31 +4,6 @@
     padding: 0;
     font-family: 'Press Start 2P', cursive;
 }
-.tom {
-    background: url("stars.png") repeat top center;
-    background-color: black;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: absolute;
-}
-.malfoy {
-    background: transparent url("splashing.png") repeat top center;
-    background-size: contain;
-    height: 100%;
-    width: 100%;
-
-    animation: twinkle 100s linear infinite;
-    position: fixed;
-}
-.maine {
-    background: black;
-}
-@keyframes twinkle {
-    from {background-position: 0,0;}
-    to {background-position: 1000px 0}
-}
 .navbar {
     height: 60px;
     display: flex;
@@ -80,7 +55,7 @@
     position: relative;
 }
 .button:hover {
-    animation: pulse 2.3s infinite;
+    animation: pulse 1.8s infinite;
 }
 .button:hover::before {
     position: sticky;
@@ -88,9 +63,17 @@
     font-size: 1.5vw;
     margin-top: -0.3%;
     color: red;
-    animation: fade-in 1s forwards;
+    animation: fade-in-left 0.6s forwards;
 }
-@keyframes fade-in {
+.button:hover::after {
+    position: sticky;
+    content: "<";
+    font-size: 1.5vw;
+    margin-top: -0.3%;
+    color: red;
+    animation: fade-in-right 0.6s forwards;
+}
+@keyframes fade-in-left {
     0% {
         margin-left: -1.5%;
         margin-right: -1.5%;
@@ -99,6 +82,18 @@
     100% {
         margin-left: -1%;
         margin-right: -2%;
+        opacity: 1;
+    }
+}
+@keyframes fade-in-right {
+    0% {
+        margin-left: -1.5%;
+        margin-right: -1.5%;
+        opacity: 0;
+    }
+    100% {
+        margin-left: -2%;
+        margin-right: -1%;
         opacity: 1;
     }
 }
@@ -131,13 +126,12 @@ h2 {
 }
 @keyframes pulse {
 	60% {
-        opacity: 0.7;
+        opacity: 0.8;
 		font-size: 1.18vw;
 	}
-
-	100% {
+    100% {
         opacity: 1;
-	}
+    }
 }
 .sub_content1 {
     color: white;
