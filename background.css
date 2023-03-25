@@ -46,8 +46,8 @@
 }
 .star {
     background: white;
-    height: 50%;
-    width: 100%;
+    height: 10%;
+    width: 2%;
     background-size: 3vmin 3vmin;
     margin-top: -0.4%;
     border-radius: 50%;
@@ -56,8 +56,8 @@
 }
 .star2 {
     background:white;
-    height: 50%;
-    width: 10%;
+    height: 10%;
+    width: 2%;
     background-size: 3vmin 3vmin;
     margin-top: -0.4%;
     border-radius: 50%;
