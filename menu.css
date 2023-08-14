@@ -115,6 +115,8 @@
     padding-bottom: 1.5%;
     padding-top: 1.5%;
     margin-inline: 25%;
+    overflow: auto;
+    position: relative;
 }
 h1 {
     font-size: 6vw;
@@ -387,4 +389,23 @@ h3 {
         box-shadow: -100vw 0px black;
 
     }
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    /*border: 2px solid white;*/
+  }
+.main_content2 {
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid white;
+    padding-top: 0%;
+    position: relative;
+    height: 80%;
+    width: 60%;
+    overflow: auto;
+    margin-left: 20%;
 }
