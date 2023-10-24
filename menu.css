@@ -11,8 +11,11 @@
     position: sticky;
 }
 .navbar_item {
-    height: 40px;
-    padding-top: 3px;
+    height: 5vw; 
+    padding-top: 1vw;
+    /*border: 2px solid white;*/
+    position: relative;
+    flex: 1;
 }
 .navbar_links {
     color: white;
@@ -51,16 +54,17 @@
     padding-bottom: 1%;
     margin-right: auto;
     color: white;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
     position: relative;
 }
 .button:hover {
     animation: pulse 1.8s infinite;
+    font-size: 1.5vw;
 }
 .button:hover::before {
     position: sticky;
     content: ">";
-    font-size: 1.5vw;
+    font-size: 1.45vw;
     margin-top: -0.3%;
     color: red;
     animation: fade-in-left 0.6s forwards;
@@ -68,7 +72,7 @@
 .button:hover::after {
     position: sticky;
     content: "<";
-    font-size: 1.5vw;
+    font-size: 1.45vw;
     margin-top: -0.3%;
     color: red;
     animation: fade-in-right 0.6s forwards;
@@ -110,6 +114,7 @@
     position: relative;
 }
 .sub_content {
+    display: flex;
     color: white;
     /*border: 2px solid white;*/
     padding-bottom: 1.5%;
@@ -117,6 +122,8 @@
     margin-inline: 25%;
     overflow: auto;
     position: relative;
+    flex-direction: column;
+    height: 30%;
 }
 h1 {
     font-size: 6vw;
@@ -129,7 +136,7 @@ h2 {
 @keyframes pulse {
 	60% {
         opacity: 0.8;
-		font-size: 1.18vw;
+		font-size: 1.45vw;
 	}
     100% {
         opacity: 1;
@@ -137,7 +144,7 @@ h2 {
 }
 .sub_content1 {
     color: white;
-    padding-bottom: 1.5%;
+    /*padding-bottom: 1.5%;*/
     margin-inline: 25%;
 }
 #bar {
@@ -166,10 +173,11 @@ h2 {
 }
 .footer {
     color:white;
-    position: relative;
+    position: sticky;
     text-align: center;
     margin-top: 4.5%;
     font-size: 1vw;
+
 }
 .header {
     margin-top: 2.5%;
